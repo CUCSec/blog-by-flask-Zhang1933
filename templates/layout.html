@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Blog-{% block title %} 首页 {% endblock %}
+        </title>
+    </head>
+    <body>
+        <li><a href="/home">首页</a> </li>
+        <li><a href="/articles_list"> 文章列表</li>
+        <li><a href="/about">关于</a></li> 
+        {% block PageName %} 
+        <h1>
+            首页
+        </h1>
+        {% endblock %}
+
+        {% block content %} 
+        <p>
+            👏欢迎
+        </p>
+        {% endblock %}
+    </body>
+    
+</html>

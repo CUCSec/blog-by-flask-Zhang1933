@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{article[0]}}
+{% endblock %}
+
+{% block PageName %} 
+<h1>
+    {{article[0]}}
+</h1>
+{% endblock %}
+
+{% block content %} 
+    {% for words in article[1:] %}
+        <p>
+           &nbsp&nbsp{{ words }}
+        </p>
+    {% endfor %}
+
+{% endblock %}
+
+
+
+
+
+
+
