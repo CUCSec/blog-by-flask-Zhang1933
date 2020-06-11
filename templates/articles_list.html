@@ -8,14 +8,14 @@ Blog-{% block title %} 文章列表{% endblock %}
 {% endblock %}
 
 {% block content %} 
-    {% for i in list %}
+    {% for i ,t in  article_dict  %}
         <li>
         <a href="/data/{{ (i[5:]) }}">
             {{i[5:][:-4]}}
         </a>
+           <div> 上传时间：{{t}}</div>
         </li>
     {% endfor%}
-
 {% endblock %}
 
 
